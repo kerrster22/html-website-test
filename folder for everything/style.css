@@ -31,7 +31,7 @@ h1 {
     animation-name: practice;
     animation-duration: 4s;
     animation-direction: alternate;
-    animation-iteration-count: 1;
+    animation-iteration-count: 0;
 }
 header .img {
     float: right;
@@ -69,8 +69,7 @@ div img
  float: right; 
 
 }
-
-footer ul {
+footer {
 
 }
 
@@ -79,6 +78,5 @@ list-style-type: none;
 }
 
 footer li:hover {
-
    color: yellow; 
 }
