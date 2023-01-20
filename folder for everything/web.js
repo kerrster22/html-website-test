@@ -35,10 +35,20 @@ whatsTheTemp();
 
 document.write(myName + " " + temperature + " °");
 
+function getRating() {
+  let rate = prompt("Please rate the site 0-10");
+  let output = "your rating";
+
+  for (let i = 0; i < rate; i++) {
+    output =
+      output +
+      "<img src='./film-reel.png' class = 'film-reel' width = 25px height = 25px />";
+  }
+  document.write(output);
+}
 function guessPassword() {
   let answer;
 
-  // while the answer is incorrect, keep asking
   while (answer != 1234) {
     answer = prompt("Guess the password 0-9");
 
@@ -50,19 +60,3 @@ function guessPassword() {
     }
   }
 }
-
-function getRating() {
-  let rate = prompt("Please rate the site 0-10");
-  let output = "your rating";
-
-  for (let i = 0; i < rate; i++) {
-    output = output + "<img src='./film-reel.png' class = 'film-reel' />";
-  }
-  document.write(output);
-}
-getRating();
-
-function greet(name) {
-  return "Hello, " + name;
-}
-greet("Grace Hopper");
