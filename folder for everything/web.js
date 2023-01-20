@@ -1,4 +1,4 @@
-let myName;
+//let myName;
 let temperature;
 let temp;
 let color;
@@ -61,3 +61,8 @@ function getRating() {
   document.write(output);
 }
 getRating();
+
+function greet(name) {
+  return "Hello, " + name;
+}
+greet("Grace Hopper");
