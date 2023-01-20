@@ -35,4 +35,29 @@ whatsTheTemp();
 
 document.write(myName + " " + temperature + " °");
 
-confirm("have you answered everything ?");
+function guessPassword() {
+  let answer;
+
+  // while the answer is incorrect, keep asking
+  while (answer != 1234) {
+    answer = prompt("Guess the password 0-9");
+
+    if (answer != 1234) {
+      alert("Nice try Hint=1+2+3+4*100+1+2+3+4+90+100+30+4");
+    } else {
+      alert("Welldone you cracked the code ENTER AT YOUR OWN RISK!");
+      document.write("             Welldone :)");
+    }
+  }
+}
+
+function getRating() {
+  let rate = prompt("Please rate the site 0-10");
+  let output = "your rating";
+
+  for (let i = 0; i < rate; i++) {
+    output = output + "<img src='./film-reel.png' class = 'film-reel' />";
+  }
+  document.write(output);
+}
+getRating();
