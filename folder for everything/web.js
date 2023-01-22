@@ -53,7 +53,7 @@ function guessPassword() {
     answer = prompt("Guess the password 0-9");
 
     if (answer != 1234) {
-      alert("Nice try Hint=1+2+3+4*100+1+2+3+4+90+100+30+4");
+      alert("");
     } else {
       alert("Welldone you cracked the code ENTER AT YOUR OWN RISK!");
       document.write("             Welldone :)");
